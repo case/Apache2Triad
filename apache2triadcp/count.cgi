@@ -4,13 +4,13 @@ print "Content-type: text/html\n\n";
 
 $file = 'count.txt';
 
-$cunt = 0;
+$foobar = 0;
 open(FILE,"<$file") or die "cant read $file";
-$cunt = <FILE>;
+$foobar = <FILE>;
 close(FILE);
-$cunt += 1;
+$foobar += 1;
 open(FILE,">$file") or die "cant write $file";
-print FILE $cunt;
+print FILE $foobar;
 close(FILE);
-print "$cunt";
+print "$foobar";
 exit;
